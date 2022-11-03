@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+  .fas {
+    font-size: 1.2em;
+  }
+  .navbar {
+    background-color: #EDCB54;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+  .navbar .logo {
+    height: 60px;
+    width: 60px;
+    grid-column: 2 / 3;
+  }
+  .navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+  }
+  .navbar ul li {
+    font-size: 18px;
+    margin-right: 4em;
+    list-style: none;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar a:hover {
+    color: #fff;
+  }
+  .navbar .menu-bar {
+    display: none;
+  }
+  
+  
+  body {
+      background-color: #353232;
+      background-size: 100% 100vh;
+      background-repeat: repeat;
+      background-position: left center;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .container {
+      max-width: 1170px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.5em;
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .title{
+      text-align: center;
+      font-size: 40px;
+      color: #EDCB54;
+      margin-top: 100px;
+      font-weight: 100;
+  }
+  
+  .contact-wrapper {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  }
+  
+  .contact-wrapper > * {
+      padding: 1em;
+  }
+  
+  .contact-form {
+      background: #222222;
+      color: #EDCB54;
+  }
+  
+  .contact-form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-form form label {
+      display: block;
+  }
+  
+  .contact-form form p {
+      margin: 0;
+      padding: 1em;
+  }
+  
+  .contact-form form .block {
+      grid-column: 1 / 3;
+  }
+  
+  .contact-form form button,
+  .contact-form form input,
+  .contact-form form textarea {
+      width: 100%;
+      padding: .7em;
+      border: none;
+      background: none;
+      outline: 0;
+      color: #EDCB54;
+      border-bottom: 1px solid #4b1fc63b;
+  }
+  
+  .contact-form form button {
+      background: #EDCB54;
+      color: #f6e6e6;
+      border: 0;
+      text-transform: uppercase;
+      padding: 1em;
+  }
+  
+  .contact-form form button:hover,
+  .contact-form form button:focus {
+      background: #cdb3b3;
+      color: #fff;
+      transition: background-color 1s ease-out;
+      outline: 0;
+  }
+  
+  .redes {
+  
+      display: grid;
+      position: relative;
+      width: 100%;
+      height: 80px;
+      align-items: center;
+      background-color: #181818;
+      color: #EDCB54;
+    }
+  
+  @media only screen and (max-width: 600px)  {
+    
+      .navbar {
+        background-color: #EDCB54;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+      }
+      .navbar .logo {
+        height: 60px;
+        width: 60px;
+        grid-column: 2 / 3;
+      }
+      .navbar .menu {
+        grid-column: 4 / 7;
+        display: flex;
+      }
+      .navbar ul li {
+        margin-right: 3em;
+        list-style: none;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+      .navbar ul li a:hover {
+        color: #fff;
+      }
+      .navbar .menu-bar {
+        display: none;
+      }
+      
+      .navbar {
+        position: relative;
+      }
+      .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #EDCB54;
+        transform: translateX(170%);
+        transition: all 1s;
+        margin-top: 34em;
+        z-index: 1;
+      } 
+      .navbar .menu-toggle {
+        transform: translateX(70%);
+      }
+      
+      .navbar .menu-bar {
+        display: block;
+      }
+      .navbar .menu-bar .fas {
+        color: #181818;
+      }
+      .navbar .menu li {
+        list-style: none;
+        margin: 0 auto;
+      }  
+      .navbar .menu li a {
+        text-decoration: none;
+        color: #181818;
+        font-size: 1.5em;
+      } 
+      .navbar .menu-bar {
+          grid-column: 8 / 10;
+          font-size: 2em;
+          cursor: pointer;
+          z-index: 1;
+        }  
+      .general .contenido {
+        z-index: 0;
+        grid-column: 2 / 9;
+        grid-row: 5 / 7;
+      }
+      .general .contenido h1 {
+        font-size: 3.5em;
+      }
+      
+      .redes .fab {
+        color: #EDCB54;
+      }
+  }

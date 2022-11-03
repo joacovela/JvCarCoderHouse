@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+  .fas {
+    font-size: 1.2em;
+  }
+  .navbar {
+    background-color: #EDCB54;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+  .navbar .logo {
+    height: 60px;
+    width: 60px;
+    grid-column: 2 / 3;
+  }
+  .navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+  }
+  .navbar ul li {
+    font-size: 18px;
+    margin-right: 4em;
+    list-style: none;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar a:hover {
+    color: #fff;
+  }
+  .navbar .menu-bar {
+    display: none;
+  }
+  
+  
+  body {
+      background-color: #353232;
+      background-size: 100% 100vh;
+      background-repeat: repeat;
+      background-position: left center;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .title{
+      text-align: center;
+      font-size: 40px;
+      color: #EDCB54;
+      margin-top: 100px;
+      font-weight: 100;
+  }
+  
+  .container{
+      width: 100%;
+      max-width: 1200px;
+      height: 430px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      }
+  
+  .container .card{
+          font-size: 20px;
+          color: #EDCB54;
+          width: 330px;
+          height: 430px;
+          border-radius: 8px; 
+          box-shadow: 0 2px 2px #EDCB54;
+          overflow: hidden;
+          margin: 20px;
+          text-align: center;
+          transition: all 0.25s;
+          }
+  
+  .container .card:hover{
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgb(10, 10, 10);
+  }
+  
+  .container .card:hover img{
+      
+      width: 330px;
+      height: 220px;
+  }
+  
+  .container .card h4{
+      font-weight: 600;
+  }
+  
+  .container .card p{
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  
+  .container .card a{
+      color: #EDCB54;
+  }
+  
+  
+  .redes {
+  
+      display: grid;
+      width: 100%;
+      height: 80px;
+      align-items: center;
+      background-color: #181818;
+      color: #EDCB54;
+    }
+      
+  
+  
+  @media only screen and (max-width: 600px)  {
+    
+      .navbar {
+        background-color: #EDCB54;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+      }
+      .navbar .logo {
+        height: 60px;
+        width: 60px;
+        grid-column: 2 / 3;
+      }
+      .navbar .menu {
+        grid-column: 4 / 7;
+        display: flex;
+      }
+      .navbar ul li {
+        margin-right: 3em;
+        list-style: none;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+      .navbar ul li a:hover {
+        color: #fff;
+      }
+      .navbar .menu-bar {
+        display: none;
+      }
+      
+      .navbar {
+        position: relative;
+      }
+      .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #EDCB54;
+        transform: translateX(170%);
+        transition: all 1s;
+        margin-top: 34em;
+        z-index: 1;
+      } 
+      .navbar .menu-toggle {
+        transform: translateX(70%);
+      }
+      
+      .navbar .menu-bar {
+        display: block;
+      }
+      .navbar .menu-bar .fas {
+        color: #181818;
+      }
+      .navbar .menu li {
+        list-style: none;
+        margin: 0 auto;
+      }  
+      .navbar .menu li a {
+        text-decoration: none;
+        color: #181818;
+        font-size: 1.5em;
+      } 
+      .navbar .menu-bar {
+          grid-column: 8 / 10;
+          font-size: 2em;
+          cursor: pointer;
+          z-index: 1;
+        }  
+      .general .contenido {
+        z-index: 0;
+        grid-column: 2 / 9;
+        grid-row: 5 / 7;
+      }
+      .general .contenido h1 {
+        font-size: 3.5em;
+      }
+      
+      .redes .fab {
+        color: #EDCB54;
+      }
+  }
